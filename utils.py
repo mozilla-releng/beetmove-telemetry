@@ -14,10 +14,8 @@ from constants import MIME_MAP, CACHE_CONTROL_MAXAGE
 
 def setup_mimetypes():
     mimetypes.init()
-    # in py3 we must exhaust the map so that add_type is actually invoked
-    list(map(
-        lambda ext_mimetype: mimetypes.add_type(ext_mimetype[1], ext_mimetype[0]), MIME_MAP.items()
-    ))
+    for ext, type_ in MIME_MAP.items():
+        mimetypes.add_type(type_, ext)
 
 
 def load_json_or_yaml(string, is_path=False, file_type='json',

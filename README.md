@@ -1,12 +1,11 @@
 # beetmove-telemetry
-Scripts to upload the mobile telemetry under https://maven.mozilla.org/
+Scripts to upload semanticdb-kotlinc releases to https://maven.mozilla.org/
 
 # Example of usage
 ```bash
 $ cp config_example.json script_config.json
 $ < update script_config with actual credentials > ...
-$ pip install -U -r requirements.txt
-$ VERSION='22.0.0'; python script.py --release-url "https://github.com/mozilla/glean/releases/download/v$VERSION/glean-v$VERSION.zip" \
+$ VERSION='0.9.0'; uv run --with-requirements requirements.txt script.py \
                                      --script-config script_config.json \
                                      --bucket maven-production \
                                      --version "$VERSION"
