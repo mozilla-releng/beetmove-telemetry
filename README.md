@@ -13,5 +13,6 @@ $ VERSION='22.0.0'; python script.py --release-url "https://github.com/mozilla/g
 ```
 
 # Branches
-- [main](https://github.com/escapewindow/beetmove-telemetry/tree/main): @mtabara's work for glean
-- [apidoc](https://github.com/escapewindow/beetmove-telemetry/tree/apidoc): @escapewindow's work for apidoc
+- [main](https://github.com/mozilla-releng/beetmove-telemetry/tree/main): @mtabara's work for glean
+- [apidoc](https://github.com/mozilla-releng/beetmove-telemetry/tree/apidoc): @escapewindow's work for apidoc
+- [mozsearch](https://github.com/mozilla-releng/beetmove-telemetry/tree/mozsearch): @jcristau's work for semanticdb-kotlinc
