@@ -16,6 +16,7 @@ MIME_MAP = {
     '.json': 'application/json',
     '.mar': 'application/octet-stream',
     '.md5': 'text/plain',
+    '.module': 'application/json',
     '.msi': 'application/x-msi',
     '.pkg': 'application/x-newton-compatible-pkg',
     '.pom': 'application/xml',
