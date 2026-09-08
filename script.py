@@ -18,8 +18,6 @@ from zip import (
 CHUNK_SIZE = 1024 * 1024
 
 MOZSEARCH_PACKAGES = [
-    'lsif-kotlin',
-    'semanticdb-kotlin',
     'semanticdb-kotlinc'
 ]
 
