@@ -1,3 +1,11 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# dependencies = [
+#     "aiohttp",
+#     "boto3",
+#     "requests",
+# ]
+# ///
 """ Main script to push to maven.mozilla.org"""
 import argparse
 import asyncio
