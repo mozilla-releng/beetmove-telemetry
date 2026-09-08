@@ -5,10 +5,10 @@ Scripts to upload semanticdb-kotlinc releases to https://maven.mozilla.org/
 ```bash
 $ cp config_example.json script_config.json
 $ < update script_config with actual credentials > ...
-$ VERSION='0.9.0'; uv run --with-requirements requirements.txt script.py \
-                                     --script-config script_config.json \
-                                     --bucket maven-production \
-                                     --version "$VERSION"
+$ VERSION='0.9.0'; uv run script.py \
+                       --script-config script_config.json \
+                       --bucket maven-production \
+                       --version "$VERSION"
 ```
 
 # Branches
